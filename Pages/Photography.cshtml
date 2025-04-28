@@ -1,0 +1,43 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Portfolio";
+}
+<h1>@ViewData["Title"]</h1>
+
+<input id="weddingFoto"
+       type="image"
+       width="600"
+       height="150"
+       alt="WeddingPhoto"
+       src="lib/slikefirma/vjencanjabanner.PNG" 
+       onclick="naVjencanjaFoto()" />
+<p id="weddingFoto1">Wedding Photo</p>
+
+<input id="studioFoto"
+       type="image"
+       width="600"
+       height="150"
+       alt="StudioPhoto"
+       src="lib/slikefirma/krstenjabanner.PNG"
+       onclick="naStudioFoto()" />
+<p id="studioFoto1">Studio Photo</p>
+
+<input id="familyFoto"
+       type="image"
+       width="600"
+       height="150"
+       alt="FamilyPhoto"
+       src="lib/slikefirma/eventibanner.PNG"
+       onclick="naFamilyFoto()" />
+<p id="familyFoto1">Family Photo</p>
+
+<input id="promoFoto"
+       type="image"
+       width="600"
+       height="150"
+       alt="PromoPhoto"
+       src="lib/slikefirma/eventibanner.PNG"
+       onclick="naPromoFoto()" />
+<p id="promoFoto1">Promo Photo</p>
+

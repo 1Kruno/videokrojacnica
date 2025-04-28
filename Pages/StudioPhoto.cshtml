@@ -1,0 +1,45 @@
+﻿@page
+@model VKT1.Pages.StudioPhotoModel
+@{
+}
+
+<h1 id="studiophotogallery">Studio photo gallery</h1>
+
+<div class="gallery" onclick="openLightbox(event)">
+    <img src="lib/studioPhotoLib/studioweb-1.jpg"
+         alt="Image 1">
+    <img src="lib/studioPhotoLib/studioweb-2.jpg"
+         alt="Image 2">
+    <img src="lib/studioPhotoLib/studioweb-3.jpg"
+         alt="Image 3">
+    <img src="lib/studioPhotoLib/studioweb-4.jpg"
+         alt="Image 4">
+    <img src="lib/studioPhotoLib/studioweb-5.jpg"
+         alt="Image 5">
+    <img src="lib/studioPhotoLib/studioweb-6.jpg"
+         alt="Image 6">
+    <img src="lib/studioPhotoLib/studioweb-7.jpg"
+         alt="Image 7">
+    <img src="lib/studioPhotoLib/studioweb-8.jpg"
+         alt="Image 8">
+    <img src="lib/studioPhotoLib/studioweb-9.jpg"
+         alt="Image 9">
+</div>
+
+<!-- Lightbox container -->
+<div id="lightbox">
+    <!-- Close button -->
+    <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+    <!-- Main lightbox image -->
+    <img id="lightbox-img" src="" alt="lightbox image">
+
+    <!-- Thumbnails container -->
+    <div id="thumbnail-container">
+        <!-- Thumbnails will be added dynamically using JavaScript -->
+    </div>
+
+    <!-- Previous and Next buttons -->
+    <button id="prev-btn" onclick="changeImage(-1)"><img src="~/lib/slikefirma/lijevo.png" /></button>
+    <button id="next-btn" onclick="changeImage(1)"><img src="~/lib/slikefirma/desno.png" /></button>
+</div>

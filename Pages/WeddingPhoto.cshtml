@@ -1,0 +1,125 @@
+﻿@page
+@model VKT1.Pages.WeddingPhotoModel
+@{
+}
+
+<h1 id="weddingphotogallery">Wedding photo gallery</h1>
+
+<div class="gallery" onclick="openLightbox(event)">
+    <img src="lib/weddingPhotoLib/weddingweb-1.jpg"
+         alt="Image 1">
+    <img src="lib/weddingPhotoLib/weddingweb-2.jpg"
+         alt="Image 2">
+    <img src="lib/weddingPhotoLib/weddingweb-3.jpg"
+         alt="Image 3">
+    <img src="lib/weddingPhotoLib/weddingweb-4.jpg"
+         alt="Image 4">
+    <img src="lib/weddingPhotoLib/weddingweb-5.jpg"
+         alt="Image 5">
+    <img src="lib/weddingPhotoLib/weddingweb-6.jpg"
+         alt="Image 6">
+    <img src="lib/weddingPhotoLib/weddingweb-7.jpg"
+         alt="Image 7">
+    <img src="lib/weddingPhotoLib/weddingweb-8.jpg"
+         alt="Image 8">
+    <img src="lib/weddingPhotoLib/weddingweb-9.jpg"
+         alt="Image 9">
+    <img src="lib/weddingPhotoLib/weddingweb-10.jpg"
+         alt="Image 10">
+    <img src="lib/weddingPhotoLib/weddingweb-11.jpg"
+         alt="Image 11">
+    <img src="lib/weddingPhotoLib/weddingweb-12.jpg"
+         alt="Image 12">
+    <img src="lib/weddingPhotoLib/weddingweb-13.jpg"
+         alt="Image 13">
+    <img src="lib/weddingPhotoLib/weddingweb-14.jpg"
+         alt="Image 14">
+    <img src="lib/weddingPhotoLib/weddingweb-15.jpg"
+         alt="Image 15">
+    <img src="lib/weddingPhotoLib/weddingweb-16.jpg"
+         alt="Image 16">
+    <img src="lib/weddingPhotoLib/weddingweb-17.jpg"
+         alt="Image 17">
+    <img src="lib/weddingPhotoLib/weddingweb-18.jpg"
+         alt="Image 18">
+    <img src="lib/weddingPhotoLib/weddingweb-19.jpg"
+         alt="Image 19">
+    <img src="lib/weddingPhotoLib/weddingweb-20.jpg"
+         alt="Image 20">
+    <img src="lib/weddingPhotoLib/weddingweb-21.jpg"
+         alt="Image 21">
+    <img src="lib/weddingPhotoLib/weddingweb-22.jpg"
+         alt="Image 22">
+    <img src="lib/weddingPhotoLib/weddingweb-23.jpg"
+         alt="Image 23">
+    <img src="lib/weddingPhotoLib/weddingweb-24.jpg"
+         alt="Image 24">
+    <img src="lib/weddingPhotoLib/weddingweb-25.jpg"
+         alt="Image 25">
+    <img src="lib/weddingPhotoLib/weddingweb-26.jpg"
+         alt="Image 26">
+    <img src="lib/weddingPhotoLib/weddingweb-27.jpg"
+         alt="Image 27">
+    <img src="lib/weddingPhotoLib/weddingweb-28.jpg"
+         alt="Image 28">
+    <img src="lib/weddingPhotoLib/weddingweb-29.jpg"
+         alt="Image 29">
+    <img src="lib/weddingPhotoLib/weddingweb-30.jpg"
+         alt="Image 30">
+    <img src="lib/weddingPhotoLib/weddingweb-31.jpg"
+         alt="Image 31">
+    <img src="lib/weddingPhotoLib/weddingweb-32.jpg"
+         alt="Image 32">
+    <img src="lib/weddingPhotoLib/weddingweb-33.jpg"
+         alt="Image 33">
+    <img src="lib/weddingPhotoLib/weddingweb-34.jpg"
+         alt="Image 34">
+    <img src="lib/weddingPhotoLib/weddingweb-35.jpg"
+         alt="Image 35">
+    <img src="lib/weddingPhotoLib/weddingweb-36.jpg"
+         alt="Image 36">
+    <img src="lib/weddingPhotoLib/weddingweb-37.jpg"
+         alt="Image 37">
+    <img src="lib/weddingPhotoLib/weddingweb-38.jpg"
+         alt="Image 38">
+    <img src="lib/weddingPhotoLib/weddingweb-39.jpg"
+         alt="Image 39">
+    <img src="lib/weddingPhotoLib/weddingweb-40.jpg"
+         alt="Image 40">
+    <img src="lib/weddingPhotoLib/weddingweb-41.jpg"
+         alt="Image 41">
+    <img src="lib/weddingPhotoLib/weddingweb-42.jpg"
+         alt="Image 42">
+    <img src="lib/weddingPhotoLib/weddingweb-43.jpg"
+         alt="Image 43">
+    <img src="lib/weddingPhotoLib/weddingweb-44.jpg"
+         alt="Image 44">
+    <img src="lib/weddingPhotoLib/weddingweb-45.jpg"
+         alt="Image 45">
+    <img src="lib/weddingPhotoLib/weddingweb-46.jpg"
+         alt="Image 46">
+    <img src="lib/weddingPhotoLib/weddingweb-47.jpg"
+         alt="Image 47">
+    <img src="lib/weddingPhotoLib/weddingweb-48.jpg"
+         alt="Image 48">
+    <img src="lib/weddingPhotoLib/weddingweb-49.jpg"
+         alt="Image 49">
+</div>
+
+<!-- Lightbox container -->
+<div id="lightbox">
+    <!-- Close button -->
+    <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+    <!-- Main lightbox image -->
+    <img id="lightbox-img" src="" alt="lightbox image">
+
+    <!-- Thumbnails container -->
+    <div id="thumbnail-container">
+        <!-- Thumbnails will be added dynamically using JavaScript -->
+    </div>
+
+    <!-- Previous and Next buttons -->
+    <button id="prev-btn" onclick="changeImage(-1)"><img src="~/lib/slikefirma/lijevo.png" /></button>
+    <button id="next-btn" onclick="changeImage(1)"><img src="~/lib/slikefirma/desno.png" /></button>
+</div>

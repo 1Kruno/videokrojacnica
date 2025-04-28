@@ -1,0 +1,85 @@
+﻿@page
+@model VKT1.Pages.PromoPhotoModel
+@{
+}
+
+<h1 id="promofotogallery">Promo photo gallery</h1>
+
+<div class="gallery" onclick="openLightbox(event)">
+    <img src="lib/promoPhotoLib/promoweb-1.jpg"
+         alt="Image 1">
+    <img src="lib/promoPhotoLib/promoweb-2.jpg"
+         alt="Image 2">
+    <img src="lib/promoPhotoLib/promoweb-3.jpg"
+         alt="Image 3">
+    <img src="lib/promoPhotoLib/promoweb-4.jpg"
+         alt="Image 4">
+    <img src="lib/promoPhotoLib/promoweb-5.jpg"
+         alt="Image 5">
+    <img src="lib/promoPhotoLib/promoweb-6.jpg"
+         alt="Image 6">
+    <img src="lib/promoPhotoLib/promoweb-7.jpg"
+         alt="Image 7">
+    <img src="lib/promoPhotoLib/promoweb-8.jpg"
+         alt="Image 8">
+    <img src="lib/promoPhotoLib/promoweb-9.jpg"
+         alt="Image 9">
+    <img src="lib/promoPhotoLib/promoweb-10.jpg"
+         alt="Image 10">
+    <img src="lib/promoPhotoLib/promoweb-11.jpg"
+         alt="Image 11">
+    <img src="lib/promoPhotoLib/promoweb-12.jpg"
+         alt="Image 12">
+    <img src="lib/promoPhotoLib/promoweb-13.jpg"
+         alt="Image 13">
+    <img src="lib/promoPhotoLib/promoweb-14.jpg"
+         alt="Image 14">
+    <img src="lib/promoPhotoLib/promoweb-15.jpg"
+         alt="Image 15">
+    <img src="lib/promoPhotoLib/promoweb-16.jpg"
+         alt="Image 16">
+    <img src="lib/promoPhotoLib/promoweb-17.jpg"
+         alt="Image 17">
+    <img src="lib/promoPhotoLib/promoweb-18.jpg"
+         alt="Image 18">
+    <img src="lib/promoPhotoLib/promoweb-19.jpg"
+         alt="Image 19">
+    <img src="lib/promoPhotoLib/promoweb-20.jpg"
+         alt="Image 20">
+    <img src="lib/promoPhotoLib/promoweb-21.jpg"
+         alt="Image 21">
+    <img src="lib/promoPhotoLib/promoweb-22.jpg"
+         alt="Image 22">
+    <img src="lib/promoPhotoLib/promoweb-23.jpg"
+         alt="Image 23">
+    <img src="lib/promoPhotoLib/promoweb-24.jpg"
+         alt="Image 24">
+    <img src="lib/promoPhotoLib/promoweb-25.jpg"
+         alt="Image 25">
+    <img src="lib/promoPhotoLib/promoweb-26.jpg"
+         alt="Image 26">
+    <img src="lib/promoPhotoLib/promoweb-27.jpg"
+         alt="Image 27">
+    <img src="lib/promoPhotoLib/promoweb-28.jpg"
+         alt="Image 28">
+</div>
+
+<!-- Lightbox container -->
+<div id="lightbox">
+    <!-- Close button -->
+    <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+    <!-- Main lightbox image -->
+    <img id="lightbox-img" src="" alt="lightbox image">
+
+    <!-- Thumbnails container -->
+    <div id="thumbnail-container">
+        <!-- Thumbnails will be added dynamically using JavaScript -->
+    </div>
+
+    <!-- Previous and Next buttons -->
+    <button id="prev-btn" onclick="changeImage(-1)"><img src="~/lib/slikefirma/lijevo.png"/></button>
+    <button id="next-btn" onclick="changeImage(1)"><img src="~/lib/slikefirma/desno.png" /></button>
+
+
+</div>

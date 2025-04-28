@@ -1,0 +1,72 @@
+﻿@page
+@model VKT1.Pages.FamilyPhotoModel
+@{
+}
+
+<h1 id="familyfotogallery">Family photo gallery</h1>
+
+<div class="gallery" onclick="openLightbox(event)">
+    <img src="lib/familyPhotoLib/obiteljskeweb-1.jpg"
+         alt="Image 1">
+    <img src="lib/familyPhotoLib/obiteljskeweb-2.jpg"
+         alt="Image 2">
+    <img src="lib/familyPhotoLib/obiteljskeweb-3.jpg"
+         alt="Image 3">
+    <img src="lib/familyPhotoLib/obiteljskeweb-4.jpg"
+         alt="Image 4">
+    <img src="lib/familyPhotoLib/obiteljskeweb-5.jpg"
+         alt="Image 5">
+    <img src="lib/familyPhotoLib/obiteljskeweb-6.jpg"
+         alt="Image 6">
+    <img src="lib/familyPhotoLib/obiteljskeweb-7.jpg"
+         alt="Image 7">
+    <img src="lib/familyPhotoLib/obiteljskeweb-8.jpg"
+         alt="Image 8">
+    <img src="lib/familyPhotoLib/obiteljskeweb-9.jpg"
+         alt="Image 9">
+    <img src="lib/familyPhotoLib/obiteljskeweb-10.jpg"
+         alt="Image 10">
+    <img src="lib/familyPhotoLib/obiteljskeweb-11.jpg"
+         alt="Image 11">
+    <img src="lib/familyPhotoLib/obiteljskeweb-12.jpg"
+         alt="Image 12">
+    <img src="lib/familyPhotoLib/obiteljskeweb-13.jpg"
+         alt="Image 13">
+    <img src="lib/familyPhotoLib/obiteljskeweb-14.jpg"
+         alt="Image 14">
+    <img src="lib/familyPhotoLib/obiteljskeweb-15.jpg"
+         alt="Image 15">
+    <img src="lib/familyPhotoLib/obiteljskeweb-16.jpg"
+         alt="Image 16">
+    <img src="lib/familyPhotoLib/obiteljskeweb-17.jpg"
+         alt="Image 17">
+    <img src="lib/familyPhotoLib/obiteljskeweb-18.jpg"
+         alt="Image 18">
+    <img src="lib/familyPhotoLib/obiteljskeweb-19.jpg"
+         alt="Image 19">
+    <img src="lib/familyPhotoLib/obiteljskeweb-20.jpg"
+         alt="Image 20">
+    <img src="lib/familyPhotoLib/obiteljskeweb-21.jpg"
+         alt="Image 21">
+    <img src="lib/familyPhotoLib/obiteljskeweb-22.jpg"
+         alt="Image 22">
+    
+</div>
+
+<!-- Lightbox container -->
+<div id="lightbox">
+    <!-- Close button -->
+    <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+    <!-- Main lightbox image -->
+    <img id="lightbox-img" src="" alt="lightbox image">
+
+    <!-- Thumbnails container -->
+    <div id="thumbnail-container">
+        <!-- Thumbnails will be added dynamically using JavaScript -->
+    </div>
+
+    <!-- Previous and Next buttons -->
+    <button id="prev-btn" onclick="changeImage(-1)"><img src="~/lib/slikefirma/lijevo.png" /></button>
+    <button id="next-btn" onclick="changeImage(1)"><img src="~/lib/slikefirma/desno.png" /></button>
+</div>
