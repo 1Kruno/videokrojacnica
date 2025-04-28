@@ -1,0 +1,141 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<div id="main">
+    
+<section class="showcase">
+        <div class="video-container">
+            <video controls muted autoplay loop>
+                <source src="lib/videoFirma/promoVideoIndexLoop.mp4" type="video/mp4" >
+            </video>     
+        </div>
+                <div class="content">
+                    <img id="logoindex" src="lib/slikefirma/logobijeli.png"></img>
+                </div>
+</section>  
+</div>
+
+<div class="parwedphoto1">
+</div>
+<div class="parwedphoto1cont">
+    <div class="indexcardcont">
+        <h1 id="i1">Wedding Photos</h1>
+        <h2 id="j1">Wedding photo gallery</h2>
+        <br />
+        <button id="indexwedphobtn" onclick="naVjencanjaFoto()">Open Gallery</button>
+    </div>
+</div>
+<div class="parwedphoto1">
+</div>
+
+<div class="parwedphoto2">
+</div>
+<div class="parwedphoto2cont">
+    <div class="indexcardcont">
+        <h1 id="i2">Family Photos</h1>
+        <h2 id="j2">Family photo gallery</h2>
+        <br />
+        <button id="indexfamphobtn" onclick="naFamilyFoto()">Open Gallery</button>
+    </div>
+</div>
+<div class="parwedphoto2">
+</div>
+
+<div class="parwedphoto1">
+</div>
+<div class="parwedphoto1cont">
+    <div class="indexcardcont">
+        <h1 id="i3">Promotional Photos</h1>
+        <h2 id="j3">Promotional photo gallery</h2>
+        <br />
+        <button id="indexprophobtn" onclick="naPromoFoto()">Open Gallery</button>
+    </div>
+</div>
+<div class="parwedphoto1">
+</div>
+
+<div class="parwedphoto2">
+</div>
+<div class="parwedphoto2cont">
+    <div class="indexcardcont">
+        <h1 id="i4">Studio Photos</h1>
+        <h2 id="j4">Studio photo gallery</h2>
+        <br />
+        <button id="indexstuvidbtn" onclick="naStudioFoto()">Open Gallery</button>
+    </div>
+</div>
+<div class="parwedphoto2">
+</div>
+
+<div class="parwedphoto1">
+</div>
+<div class="parwedphoto1cont">
+    <div class="indexcardcont">
+        <h1 id="i5">Wedding Videos</h1>
+        <h2 id="j5">Wedding video gallery</h2>
+        <br />
+        <button id="indexwedvidbtn" onclick="naVjencanjaVideo()">Open Gallery</button>
+    </div>
+</div>
+<div class="parwedphoto1">
+</div>
+
+<div class="parwedphoto2">
+</div>
+<div class="parwedphoto2cont">
+    <div class="indexcardcont">
+        <h1 id="i6">Promotional Videos</h1>
+        <h2 id="j6">Promotional video gallery</h2>
+        <br />
+        <button id="indexpromophotobtn" onclick="naPromoVideo()">Open Gallery</button>
+    </div>
+</div>
+<div class="parwedphoto2">
+</div>
+
+<div class="parwedphoto1">
+</div>
+<div class="parwedphoto1cont">
+    <div class="indexcardcont">
+        <h1 id="i7">Video Reels</h1>
+        <h2 id="j7">Video reels gallery</h2>
+        <br />
+        <button id="indexreelsbtn" onclick="naReelsVideo()">Open Gallery</button>
+    </div>
+</div>
+<div class="parwedphoto1">
+</div>
+
+<div class="parwedphoto2">
+</div>
+<div class="parwedphoto2cont">
+    <div class="indexcardcont">
+        <h1 id="i8">Prices</h1>
+        <h2 id="j8">Our pricing for the current year</h2>
+        <br />
+        <button id="indexpricebtn" onclick="naPrices()">Check Prices</button>
+    </div>
+</div>
+<div class="parwedphoto2">
+</div>
+
+<div class="parwedphoto1">
+</div>
+<div class="parwedphoto1cont">
+    <div class="indexcardcont">
+        <h1 id="i9">Contact</h1>
+        <h2 id="j9">Any questions? Reach out and we'll be happy to reply</h2>
+        <br />
+        <button id="indexcontactbtn" onclick="upit()">Contact</button>
+    </div>
+</div>
+<div class="parwedphoto1">
+</div>
+
+<script async src="https://www.cookie.eu/script.js"></script>
+
+
